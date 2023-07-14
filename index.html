@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+  
+  <p>
+    <button onclick="
+    updateCalculation('1');
+    ">1</button>
+
+    <button onclick="
+    updateCalculation('2');
+    ">2</button>
+
+    <button onclick="
+    updateCalculation('3');
+    ">3</button>
+
+    <button class="operation" 
+    onclick="
+    updateCalculation('+');
+    ">+</button>
+  </p>
+
+
+  <p>
+    <button onclick="
+    updateCalculation('4');
+    ">4</button>
+
+    <button onclick="
+    updateCalculation('5');
+    ">5</button>
+
+    <button onclick="
+    updateCalculation('6');
+    ">6</button>
+
+    <button class="operation"
+    onclick="
+    updateCalculation('-');
+    ">-</button>
+  </p>
+
+  <p>
+    <button onclick="
+    updateCalculation('7');
+    ">7</button>
+
+    <button onclick="
+    updateCalculation('8');
+    ">8</button>
+
+    <button onclick="
+    updateCalculation('9');
+    ">9</button>
+
+    <button class="operation"
+    onclick="
+    updateCalculation('*');
+    ">*</button>
+  </p>
+
+
+  <p>
+    <button onclick="
+    updateCalculation('0');
+    ">0</button>
+
+    <button onclick="
+    updateCalculation('.');
+    ">.</button>
+
+    <button onclick="
+    eval(calculation);
+    calculation = eval(calculation);
+    console.log(calculation);
+    ">=</button>
+
+    <button class="operation"
+    onclick="
+    updateCalculation('/');
+    ">/</button>
+  </p>
+
+  <p>
+    <button class="clear"
+    onclick="
+    calculation = '';
+    console.log(calculation);
+    ">Clear</button>
+  </p>
+
+  <p class="temp">
+    *For now, output is available in console.<br/>
+    Later I'll add calculation screen here only.
+  </p>
+ 
+
+  <script>
+    let calculation = '';
+
+    function updateCalculation(clickedButton){
+      calculation += clickedButton;
+      console.log(calculation);
+    }
+
+  </script>
+</body>
+</html>

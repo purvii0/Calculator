@@ -1,0 +1,32 @@
+body{
+  background-color: black;
+}
+
+button{
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 35px;
+  background-color: grey;
+  cursor: pointer;
+  color: white;
+  font-size: 23px;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+button:active{
+  opacity: 0.6;
+}
+
+.operation{
+  background-color: rgb(255, 153, 0);
+}
+
+.temp{
+  font-size: 15px;
+  margin-top: 30px;
+  color: rgb(197, 6, 6);
+}
